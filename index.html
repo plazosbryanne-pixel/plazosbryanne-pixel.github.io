@@ -9,18 +9,20 @@
 <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
 <h1>Will you be my Valentine? ❤️</h1>
 
 <div>
 
-<button>Yes 💖</button>
-<button>No 💔</button>
+<button id="yesBtn">Yes 💖</button>
+<button id="noBtn">No 💔</button>
+
+</div>
 
 <p id="message"></p>
 
-</div>
 
 <script>
 const yesBtn = document.getElementById("yesBtn");
@@ -37,6 +39,7 @@ noBtn.addEventListener("click", () => {
 yesBtn.addEventListener("click", () => {
     message.textContent = "Yehey! ❤️";
 });
+
 </script>
 
 </body>
