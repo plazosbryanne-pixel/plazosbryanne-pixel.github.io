@@ -31,3 +31,10 @@ button {
 button:hover {
     background-color: deeppink;
 }
+
+#message {
+    margin-top: 25px;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}

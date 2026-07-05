@@ -18,7 +18,26 @@
 <button>Yes 💖</button>
 <button>No 💔</button>
 
+<p id="message"></p>
+
 </div>
+
+<script>
+const yesBtn = document.getElementById("yesBtn");
+const noBtn = document.getElementById("noBtn");
+const message = document.getElementById("message");
+
+let noCount = 0;
+
+noBtn.addEventListener("click", () => {
+    noCount++;
+    message.textContent = "No" + "o".repeat(noCount * 2) + "!";
+});
+
+yesBtn.addEventListener("click", () => {
+    message.textContent = "Yehey! ❤️";
+});
+</script>
 
 </body>
 </html>
