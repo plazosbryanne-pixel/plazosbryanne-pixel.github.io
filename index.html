@@ -17,21 +17,21 @@
     <button id="yesBtn">Okay lang</button>
     <button id="noBtn">Hindi okay</button>
 
-<p id="result"></p>
+<p id="message"></p>
 
 <script>
 
   const yesBtn = document.getElementById("yesBtn");
   const noBtn = document.getElementById("noBtn");
-        const result = document.getElementById("result");
+        const message = document.getElementById("message");
 let oCount = 1;
 
         yesBtn.addEventListener("click", () => {
-            result.textContent = "MABUTI NAMAN YEHEYYYY";
+            message.textContent = "MABUTI NAMAN YEHEYYYY";
         });
 
         noBtn.addEventListener("click", () => {
-            result.textContent = "Hala WHY" + "Y".repeat(oCount);
+            message.textContent = "Hala WHY" + "Y".repeat(oCount);
             oCount++;
         });
 </script>
