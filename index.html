@@ -3,16 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOI MWHEHEHEH</title>
+    <title>WEBSITE NI BRY</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Musta ka Pa?</h1>
+    <h1>Musta ka?</h1>
 
-    <button>Okay lang</button>
-    <button>Hindi okay</button>
+<div class="buttons">
+    
+
+    <button id="yesBtn">Okay lang</button>
+    <button id="noBtn">Hindi okay</button>
+
+<p id="result"></p>
+
+<script>
+
+  const yesBtn = document.getElementById("yesBtn");
+  const noBtn = document.getElementById("noBtn");
+        const result = document.getElementById("result");
+let oCount = 1;
+
+        yesBtn.addEventListener("click", () => {
+            result.textContent = "MABUTI NAMAN YEHEYYYY";
+        });
+
+        noBtn.addEventListener("click", () => {
+            result.textContent = "Hala WHY" + "Y".repeat(oCount);
+            oCount++;
+        });
+</script>
+
+
+</div>
 
 </body>
 </html>
